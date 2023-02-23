@@ -11,8 +11,14 @@ document.getElementById("gemSort").innerHTML = gemJoin;
 
 function sorting() {
     gems.sort();
-    gemNew = gems.join(", ")
-    document.getElementById("gemSort").innerHTML = gemNew;
+    gemJoin = gems.join(", ")
+    document.getElementById("gemSort").innerHTML = gemJoin;
+  }
+
+  function addGem() {
+    gems.push("Pearls");
+    gemJoin = gems.join(", ")
+    document.getElementById("gemSort").innerHTML = gemJoin;
   }
 
 function Laptop(type, year, color){
